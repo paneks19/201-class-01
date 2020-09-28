@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Code 201: Class 01</title>
+        <!-- this is an internal style  -->
+        <style>
+            *{
+              background-color: lightgrey;
+            }
+
+            p{
+              /* background-color: lightgrey; */
+              padding: 10px;
+              border: 1px solid black;
+            }
+
+            h1{
+               background-color: darkgrey;
+               text-align: center;
+               border: 5px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!-- put important information like navigation and big titles -->
+            <!-- inline styles are styles that go in the line that you want to style -->
+        </header>
+        <main>
+            <h1>Class 1 Lab</h1>
+            <!-- prompt questions  -->
+            <p style="background-color: lightblue; color: darkgreen; text-align: left; border-width: 5px">Q1: What is your name?</p>
+            <p style="background-color: tan; color: blue; text-align: center;">Q2: What city were you born in?</p>
+            <p style="background-color: red; color: whitesmoke; text-align: center;">Q3: What city do you live in?</p>
+            <p style="background-color: darkgrey; color: darkred; text-align: right;">Q4: What city would you like to visit in the future?</p>
+        </main>
+        <footer></footer>
+        <script>
+            // declaring variables 
+            var userName;
+            var userBirthCity;
+            var userCurrentCity;
+            var userFutureCity;
+            // can write js inside the script tag 
+            // alert('This is a pop up')
+            userName = prompt('Hello, what is your name?');
+            // console.log() is a great way to debug and confirm that variables are working as intended 
+            console.log('This is the user\'s name: ' + userName + '.');
+            // this is called concatonation 
+            // alert('Nice to meet you, ' + userName);
+
+            userBirthCity = prompt('Hello, ' + userName + '. What city where you born in?');
+            console.log(userName + ' was born in ' + userBirthCity + '.');
+           
+            userCurrentCity = prompt('What city do you live in now, ' + userName + ' of ' + userBirthCity + '?');
+            console.log(userName + ' was born in ' + userBirthCity + ' and now lives in ' + userCurrentCity + '.');
+           
+            userFutureCity = prompt('Well, ' + userName + ', being born in ' + userBirthCity + ' and now living in ' + userCurrentCity + ', what city would you like to visit in the future?');
+            console.log(userName + ' was born in ' + userBirthCity + ', now lives in ' + userCurrentCity + ' and wants to visit ' + userFutureCity + ' in the future.');
+            alert(userFutureCity + ' sounds like an awesome place to visit!');
+        </script>
+    </body>
+</html>
